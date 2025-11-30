@@ -1,1 +1,22 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <Title> Basic Hosting</Title>
+  </head>
+  <body>
+    <button onclick()="randomgen()">Generate</button>
+    <p id="movie"></p>
+    <script>
+      const movies=[
+        "Inceptio",
+        "Interstellar",
+        "Top Gun",
+        "Inside Out"
+      ];
+      function randomgen(){
+        const ind=Math.floor(Math.random()*movies.length);
+        documet.getElementById("movie").textContent=movies[ind];
+      }
+    </script>
+  </body>
+</html>
